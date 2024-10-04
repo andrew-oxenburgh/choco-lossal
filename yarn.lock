@@ -2355,6 +2355,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@preflower/barcode-detector-polyfill@npm:^0.9.20":
+  version: 0.9.20
+  resolution: "@preflower/barcode-detector-polyfill@npm:0.9.20"
+  dependencies:
+    "@undecaf/zbar-wasm": "npm:^0.10.1"
+  checksum: 10c0/b01a2b7ef477169605d1bd7a38540c32fd924885d38151679a7c57c2eb8609b24c1f9ac6187bd6eae9f3ca47fd6bfe3f4e3b6c37396c4b313ffae1297d768313
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.3.1
   resolution: "@rollup/plugin-babel@npm:5.3.1"
@@ -3264,6 +3273,13 @@ __metadata:
     "@typescript-eslint/types": "npm:5.62.0"
     eslint-visitor-keys: "npm:^3.3.0"
   checksum: 10c0/7c3b8e4148e9b94d9b7162a596a1260d7a3efc4e65199693b8025c71c4652b8042501c0bc9f57654c1e2943c26da98c0f77884a746c6ae81389fcb0b513d995d
+  languageName: node
+  linkType: hard
+
+"@undecaf/zbar-wasm@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "@undecaf/zbar-wasm@npm:0.10.1"
+  checksum: 10c0/9a9526fe6e5e86fe2dd56c2ed039908c23620a1409b21be73decab12fc60d993959d3a136a1d79defa9892684846256df987402f2a304144c4bc243972c94ab2
   languageName: node
   linkType: hard
 
@@ -4472,6 +4488,7 @@ __metadata:
     "@types/react": "npm:^18.0.0"
     "@types/react-dom": "npm:^18.0.0"
     react: "npm:^18.3.1"
+    react-barcode-scanner: "npm:^2.1.0"
     react-dom: "npm:^18.3.1"
     react-scripts: "npm:5.0.1"
     typescript: "npm:^4.4.2"
@@ -11008,6 +11025,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-barcode-scanner@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "react-barcode-scanner@npm:2.1.0"
+  dependencies:
+    "@preflower/barcode-detector-polyfill": "npm:^0.9.20"
+    tslib: "npm:^2.6.3"
+    webrtc-adapter: "npm:^9.0.1"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  checksum: 10c0/74f5fbecf733483f4a7e194df3ab75697a18172a1165c33b2b34dd9c30255d4723249861844d360af36088c73b2fdda542fe4083b613a4546645ec21981cf39a
+  languageName: node
+  linkType: hard
+
 "react-dev-utils@npm:^12.0.1":
   version: 12.0.1
   resolution: "react-dev-utils@npm:12.0.1"
@@ -11687,6 +11718,13 @@ __metadata:
     ajv-formats: "npm:^2.1.1"
     ajv-keywords: "npm:^5.1.0"
   checksum: 10c0/8dab7e7800316387fd8569870b4b668cfcecf95ac551e369ea799bbcbfb63fb0365366d4b59f64822c9f7904d8c5afcfaf5a6124a4b08783e558cd25f299a6b4
+  languageName: node
+  linkType: hard
+
+"sdp@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "sdp@npm:3.2.0"
+  checksum: 10c0/fa0146132b4c9185f276b80e09f52259b103e609565ac40c560250dbe7fc47723d30530c0db9cac6217c83153944a71af81fa70dc0367f195aabcf110f8185fd
   languageName: node
   linkType: hard
 
@@ -12732,7 +12770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3":
+"tslib@npm:^2.0.3, tslib@npm:^2.6.3":
   version: 2.7.0
   resolution: "tslib@npm:2.7.0"
   checksum: 10c0/469e1d5bf1af585742128827000711efa61010b699cb040ab1800bcd3ccdd37f63ec30642c9e07c4439c1db6e46345582614275daca3e0f4abae29b0083f04a6
@@ -13307,6 +13345,15 @@ __metadata:
   bin:
     webpack: bin/webpack.js
   checksum: 10c0/b9e6d0f8ebcbf0632494ac0b90fe4acb8f4a9b83f7ace4a67a15545a36fe58599c912ab58e625e1bf58ab3b0916c75fe99da6196d412ee0cab0b5065edd84238
+  languageName: node
+  linkType: hard
+
+"webrtc-adapter@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "webrtc-adapter@npm:9.0.1"
+  dependencies:
+    sdp: "npm:^3.2.0"
+  checksum: 10c0/09286adf351b3aff6eadf7942de7f153072a946fd815450e23505e39181c332d0552f4d27a99c5d7258efa3bd70a12949fe043fd8dc6acc03507b4448d7a597e
   languageName: node
   linkType: hard
 
