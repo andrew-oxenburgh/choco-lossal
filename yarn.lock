@@ -2311,6 +2311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@picocss/pico@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@picocss/pico@npm:2.0.6"
+  checksum: 10c0/ed93254e3b0bf6d80c881f8e6d3b4070ff1cefe8f0e084f1d275a486225604a3fd164fbc0b757f50f29623782c80e1d98afdabcd6b6f013c23568b023af39b3e
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -2352,15 +2359,6 @@ __metadata:
     webpack-plugin-serve:
       optional: true
   checksum: 10c0/ba310aa4d53070f59c8a374d1d256c5965c044c0c3fb1ff6b55353fb5e86de08a490a7bd59a31f0d4951f8f29f81864c7df224fe1342543a95d048b7413ff171
-  languageName: node
-  linkType: hard
-
-"@preflower/barcode-detector-polyfill@npm:^0.9.20":
-  version: 0.9.20
-  resolution: "@preflower/barcode-detector-polyfill@npm:0.9.20"
-  dependencies:
-    "@undecaf/zbar-wasm": "npm:^0.10.1"
-  checksum: 10c0/b01a2b7ef477169605d1bd7a38540c32fd924885d38151679a7c57c2eb8609b24c1f9ac6187bd6eae9f3ca47fd6bfe3f4e3b6c37396c4b313ffae1297d768313
   languageName: node
   linkType: hard
 
@@ -2666,6 +2664,20 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
   checksum: 10c0/ff57edaeab31322c80c3f01d55404b4cebb907b9ec7672b96a1a14d053f172046b01c5f27b45677927ebee8ed91bce695a7d09edec9a48875cfacabe39d0426a
+  languageName: node
+  linkType: hard
+
+"@thewirv/react-barcode-scanner@npm:^3.3.5":
+  version: 3.3.5
+  resolution: "@thewirv/react-barcode-scanner@npm:3.3.5"
+  dependencies:
+    "@zxing/browser": "npm:^0.1.5"
+    "@zxing/library": "npm:^0.21.0"
+  peerDependencies:
+    react: ^16.8.0 || 17.x || 18.x
+    react-dom: ^16.8.0 || 17.x || 18.x
+    react-icons: ">=4.8"
+  checksum: 10c0/bfcc00b0357a8a2ed9eaccb40072fd6d44f5e13af894be5b9ebfd6545d3f93f3d9b19c27fa63eb3fc1d3594c45ce4af6f1a3052795f2c4eb64677ff558c9f481
   languageName: node
   linkType: hard
 
@@ -3276,13 +3288,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@undecaf/zbar-wasm@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "@undecaf/zbar-wasm@npm:0.10.1"
-  checksum: 10c0/9a9526fe6e5e86fe2dd56c2ed039908c23620a1409b21be73decab12fc60d993959d3a136a1d79defa9892684846256df987402f2a304144c4bc243972c94ab2
-  languageName: node
-  linkType: hard
-
 "@ungap/structured-clone@npm:^1.2.0":
   version: 1.2.0
   resolution: "@ungap/structured-clone@npm:1.2.0"
@@ -3452,6 +3457,40 @@ __metadata:
   version: 4.2.2
   resolution: "@xtuc/long@npm:4.2.2"
   checksum: 10c0/8582cbc69c79ad2d31568c412129bf23d2b1210a1dfb60c82d5a1df93334da4ee51f3057051658569e2c196d8dc33bc05ae6b974a711d0d16e801e1d0647ccd1
+  languageName: node
+  linkType: hard
+
+"@zxing/browser@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@zxing/browser@npm:0.1.5"
+  dependencies:
+    "@zxing/text-encoding": "npm:^0.9.0"
+  peerDependencies:
+    "@zxing/library": ^0.21.0
+  dependenciesMeta:
+    "@zxing/text-encoding":
+      optional: true
+  checksum: 10c0/458042ed56402d20a673b7f58cdd346cf15b0b2b84860c2529f7b86e774bd74a02b007bd2e6e5b6231b624a3f28d8e296ce943f7c6c78999d19300cae87d35e3
+  languageName: node
+  linkType: hard
+
+"@zxing/library@npm:^0.21.0":
+  version: 0.21.3
+  resolution: "@zxing/library@npm:0.21.3"
+  dependencies:
+    "@zxing/text-encoding": "npm:~0.9.0"
+    ts-custom-error: "npm:^3.2.1"
+  dependenciesMeta:
+    "@zxing/text-encoding":
+      optional: true
+  checksum: 10c0/c6b33998847ad2fda0bce2f07f5b625e33e9dd98f84818ceb976b1193936b69b38ac3120418cca24b38441c711cfd21208b50851967bf8f301567e7f70197268
+  languageName: node
+  linkType: hard
+
+"@zxing/text-encoding@npm:^0.9.0, @zxing/text-encoding@npm:~0.9.0":
+  version: 0.9.0
+  resolution: "@zxing/text-encoding@npm:0.9.0"
+  checksum: 10c0/d15bff181d46c2ab709e7242801a8d40408aa8c19b44462e5f60e766bf59105b44957914ab6baab60d10d466a5e965f21fe890c67dfdb7d5c7f940df457b4d0d
   languageName: node
   linkType: hard
 
@@ -4480,17 +4519,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "choco-lossal@workspace:."
   dependencies:
+    "@picocss/pico": "npm:^2.0.6"
     "@testing-library/jest-dom": "npm:^5.14.1"
     "@testing-library/react": "npm:^13.0.0"
     "@testing-library/user-event": "npm:^13.2.1"
+    "@thewirv/react-barcode-scanner": "npm:^3.3.5"
     "@types/jest": "npm:^27.0.1"
     "@types/node": "npm:^16.7.13"
     "@types/react": "npm:^18.0.0"
     "@types/react-dom": "npm:^18.0.0"
     react: "npm:^18.3.1"
-    react-barcode-scanner: "npm:^2.1.0"
     react-dom: "npm:^18.3.1"
+    react-icons: "npm:^5.3.0"
     react-scripts: "npm:5.0.1"
+    tailwindcss: "npm:^3.4.13"
     typescript: "npm:^4.4.2"
     web-vitals: "npm:^2.1.0"
   languageName: unknown
@@ -11025,20 +11067,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-barcode-scanner@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "react-barcode-scanner@npm:2.1.0"
-  dependencies:
-    "@preflower/barcode-detector-polyfill": "npm:^0.9.20"
-    tslib: "npm:^2.6.3"
-    webrtc-adapter: "npm:^9.0.1"
-  peerDependencies:
-    react: "*"
-    react-dom: "*"
-  checksum: 10c0/74f5fbecf733483f4a7e194df3ab75697a18172a1165c33b2b34dd9c30255d4723249861844d360af36088c73b2fdda542fe4083b613a4546645ec21981cf39a
-  languageName: node
-  linkType: hard
-
 "react-dev-utils@npm:^12.0.1":
   version: 12.0.1
   resolution: "react-dev-utils@npm:12.0.1"
@@ -11087,6 +11115,15 @@ __metadata:
   version: 6.0.11
   resolution: "react-error-overlay@npm:6.0.11"
   checksum: 10c0/8fc93942976e0c704274aec87dbc8e21f62a2cc78d1c93f9bcfff9f7494b00c60f7a2f0bd48d832bcd3190627c0255a1df907373f61f820371373a65ec4b2d64
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "react-icons@npm:5.3.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/a53af0de558f0e2bacfbafc973aa8ca1e6a429006a2f83d70becad5be431726a691e096336c95949bb0d967587b145264c5046d2bc1518969dbae731855d0712
   languageName: node
   linkType: hard
 
@@ -11718,13 +11755,6 @@ __metadata:
     ajv-formats: "npm:^2.1.1"
     ajv-keywords: "npm:^5.1.0"
   checksum: 10c0/8dab7e7800316387fd8569870b4b668cfcecf95ac551e369ea799bbcbfb63fb0365366d4b59f64822c9f7904d8c5afcfaf5a6124a4b08783e558cd25f299a6b4
-  languageName: node
-  linkType: hard
-
-"sdp@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "sdp@npm:3.2.0"
-  checksum: 10c0/fa0146132b4c9185f276b80e09f52259b103e609565ac40c560250dbe7fc47723d30530c0db9cac6217c83153944a71af81fa70dc0367f195aabcf110f8185fd
   languageName: node
   linkType: hard
 
@@ -12501,7 +12531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.2":
+"tailwindcss@npm:^3.0.2, tailwindcss@npm:^3.4.13":
   version: 3.4.13
   resolution: "tailwindcss@npm:3.4.13"
   dependencies:
@@ -12744,6 +12774,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ts-custom-error@npm:^3.2.1":
+  version: 3.3.1
+  resolution: "ts-custom-error@npm:3.3.1"
+  checksum: 10c0/67cc807d03406d7eeb2b908408d455d253cc43b480d669e2e3ea028b9aaa2c78ad1b392425b86368bbbc3c43a15e4abe304312d87ed845091646ec1937bab982
+  languageName: node
+  linkType: hard
+
 "ts-interface-checker@npm:^0.1.9":
   version: 0.1.13
   resolution: "ts-interface-checker@npm:0.1.13"
@@ -12770,7 +12807,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.6.3":
+"tslib@npm:^2.0.3":
   version: 2.7.0
   resolution: "tslib@npm:2.7.0"
   checksum: 10c0/469e1d5bf1af585742128827000711efa61010b699cb040ab1800bcd3ccdd37f63ec30642c9e07c4439c1db6e46345582614275daca3e0f4abae29b0083f04a6
@@ -13345,15 +13382,6 @@ __metadata:
   bin:
     webpack: bin/webpack.js
   checksum: 10c0/b9e6d0f8ebcbf0632494ac0b90fe4acb8f4a9b83f7ace4a67a15545a36fe58599c912ab58e625e1bf58ab3b0916c75fe99da6196d412ee0cab0b5065edd84238
-  languageName: node
-  linkType: hard
-
-"webrtc-adapter@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "webrtc-adapter@npm:9.0.1"
-  dependencies:
-    sdp: "npm:^3.2.0"
-  checksum: 10c0/09286adf351b3aff6eadf7942de7f153072a946fd815450e23505e39181c332d0552f4d27a99c5d7258efa3bd70a12949fe043fd8dc6acc03507b4448d7a597e
   languageName: node
   linkType: hard
 
