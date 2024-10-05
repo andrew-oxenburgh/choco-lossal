@@ -3,6 +3,13 @@
 import { useEffect, useState } from 'react'
 import { BarcodeScanner } from '@thewirv/react-barcode-scanner'
 
+
+const productLookup: { [key: string]: string } = {
+  '9400541002371': 'Box of Fluffies - value tissues - 250 white, 2 ply',
+  '9415077150748': '2 medium Colgate toothbrushes',
+  '345678': 'Product C'
+};
+
 function App() {
 
   const [barcode, setBarcode] = useState('barcode');
@@ -10,7 +17,7 @@ function App() {
   const [expiry, setExpiry] = useState('date');
 
   useEffect(() => {
-
+    setProduct(productLookup[barcode] || 'Product not found');
     // lookup product
 
   }, [barcode]);
