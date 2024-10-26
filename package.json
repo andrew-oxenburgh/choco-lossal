@@ -2,7 +2,6 @@
   "name": "choco-lossal",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "yarn@3.5.1+sha256.64c0b63e5fa0e21f354b5eff7c9a1b486f32046bfc3283670569e3c6a9cad102",
   "dependencies": {
     "@picocss/pico": "^2.0.6",
     "@testing-library/jest-dom": "^5.14.1",
@@ -44,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@4.5.1"
 }
